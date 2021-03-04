@@ -44,6 +44,22 @@
 		height: 120px;
 		border-radius:80%; overflow:hidden;
 	}
+	.show {
+		display: flex;
+  justify-content: space-between;
+  background: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    position: relative;
+    border-width: 0 1px 1px;
+    border-color: #fff #f3f3f3 #e8e8e8;
+    line-height: 1.6em;
+    padding: 25px;
+    margin: 10px;
+	}
+	.show img {
+		max-width: 120px;
+	}
 </style>
 </head>
 <body>
@@ -56,7 +72,8 @@
 <div id="wrapper">
 
 <div class="divayuImg">
-<img id="weixinImg" src="https://raw.githubusercontent.com/ayuLiao/images/master/me3.jpg" alt="头像" class="img-circle">	
+<img id="weixinImg" src="images/header.jpeg" alt="头像" class="img-circle">	
+
 
 </div>
 <!--BIO TITLE-->
@@ -68,7 +85,7 @@
 		<div class="modal-content">
 			
 			<div class="modal-body divayu">
-			<img id="weixinImg" src="images/sm_ayuliao.jpg" alt="微信二维码" class="img-responsive">
+			<img id="weixinImg" src="images/懒编程.jpg" alt="微信二维码" class="img-responsive">
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -77,51 +94,58 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
+
+
 <!--BIO-->
-<div id="bio">
+<div class="bio">
 	<h2>python工程师</h2>
 	
 	<!--SOCIAL LINKS-->
 	<div id="imgayu">
-		<a href="http://ayuliao.com"><img src="images/blog.png"></a>
+		<a href="http://hackpython.com"><img src="images/blog.png"></a>
 		<a href="https://github.com/ayuliao"><img src="images/github.png"></a>
 		<img src="images/weixin.png" data-toggle="modal" data-target="#myModal">
 	</div><!--end socialIcons-->
 
-
-	<p>	
-	Python作为主要开发语言，有一年Python开发经验</br>
-	熟悉Python Web开发，掌握Django、Flask、Tornado</br>
-	熟悉Python爬虫开发，掌握反爬技术、分布式爬虫</br>
-	熟悉Linux系统，可进行简单运维</br>
-	了解Tensorflow框架，熟悉word2vec、CNN、GAN</br>
-	大学期间创立过探客云印，拿到10万融资</br>
-	著有自己的书籍《Android实战开发》</br>
-	在极客学院当过布道师，录有《深入浅出NLP》和《深入浅出GAN》</br>
-	非典型程序员，喜欢看书和编程上的挑战，乐于将想法通过代码实现出来</br>
-	善于与人沟通，热爱开源和分享，喜欢写字,有自己的博客 <a href="http://ayuLiao.com">ayu</a> 和 <a href="https://github.com/ayuLiao/">Github</a>
-		
+	
+	<p>
+		技术栈集中于Python、JavaScript，有3年Python开发经验。</br>
+		熟悉Python Web开发，掌握Flask、Django、FastAPI等框架。</br>
+		熟悉Python爬虫开发，擅长JS逆向分析、分布式爬虫构建。</br>
+		了解TensorFlow、PaddlePaddle等深度学习框架，了解CV和NLP领域常见模型。</br>
 	</p>
 	
 </div><!--end bio-->
 
+<h2 id="ribbon" class="sectionHead">个人荣誉</h2>
+
+<div class="show">
+
+	<ul id="honorsAwards">
+		<li>大学期间参与探客云印创业，拿过10万融资</li>
+		<li>中国人工智能协会高级会员</li>
+		<li>阿里云大学云学院讲师</li>
+		<li>深入浅出生成对抗网络:原理剖析与TensorFlow实现-书籍作者</li>
+		<li>Python自动化办公:3分钟解决一天工作-书籍作者</li>
+	</ul><!--end honorsAwards-->
+	<img src="images/book.png">
+</div>
+
+
 <div class="clear"></div>
 
 <!--SKILLS TITLE-->
-<h2 id="tools" class="sectionHead">拥有的技能</h2>
+<h2 id="tools" class="sectionHead">技能清单</h2>
 
-<!--SKILLS-->
-<ul id="skills">
-	<!--////////////////////////////////////////////////////////////////////////////////////-->
-	<!--Notice the class names indicate the % of your skills. i.e. s70 = 70%, s40 = 40% etc. -->
-	<!--////////////////////////////////////////////////////////////////////////////////////-->
-	<li id="skill1" class="s60"><span>Python</span></li>
-	<li id="skill2" class="s50"><span>PHP</span></li>
-	<li id="skill3" class="s30"><span>Linux</span></li>
-	<li id="skill4" class="s50"><span>Android</span></li>
-	<li id="skill4" class="s40"><span>计算机网络</span></li>
-	<li id="skill6" class="s40"><span>Docker</span></li>
-</ul><!--end skills-->
+<ul id="honorsAwards">
+	<li>语言：Python、JavaScript、Node.js、PHP、C++、Erlang</li>
+	<li>Web开发：Flask、Django、FastAPI、ThinkPHP</li>
+	<li>爬虫：requests、aiohttp、scrapy、Selenium、Puppeteer、JS逆向</li>
+	<li>数据库：MySQL、MongoDB、Redis、SQlite</li>
+	<li>队列：Kafka、Celery</li>
+	<li>AI模型：CNN、GAN、RNN、LSTM、Word2Vec等</li>
+	<li>其他：Linux、ELK、Zookeeper</li>
+</ul><!--end honorsAwards-->
 
 <div class="clear"></div>
 
@@ -132,38 +156,37 @@
 <ul id="jobs">
 	<li>
 		<div class="details">
-			<h3>广州力为游戏有限公司</h3>
-			<h4>广州员村</h4>
+			<h3>广州省省回头车有限公司</h3>
+			<h4>东圃时代TIT广场</h4>
 			<h4>python工程师</h4>
-			<h5>1月2018 - 7月2018</h5>
+			<h5>10月2019 - 2月2021</h5>
 		</div>
-		<p>1.负责游戏后端维护新需求开发</br>
-		2.负责游戏活动的开发</br>
-		3.负责跑牌类游戏规则开发</p>
+		<p>1.从零开发零担这一新业务线</br>
+		2.负责推荐返佣核心业务</br>
+		3.负责货源补贴核心业务</p>
+	</li>
+	<li>
+		<div class="details">
+			<h3>广州9377游戏有限公司</h3>
+			<h4>广州东莞庄路</h4>
+			<h4>python工程师</h4>
+			<h5>10月2018 - 8月2019</h5>
+		</div>
+		<p>1.从零搭建游戏自动化部署平台</br>
+		2.开发与维护代码混淆工具</br>
+		3.负责公司各部门自动化工具开发</p>
 	</li>
 	<li>
 		<div class="details">
 			<h3>广州微宽信息技术有限公司</h3>
 			<h4>广州潭村</h4>
 			<h4>python工程师、策略开发师</h4>
-			<h5>6月2017 - 1月2018</h5>
+			<h5>7月2017 - 8月2018</h5>
 		</div>
 		<p>1.负责策略商城后端的搭建</br>
 		2.开发技术面的量化策略</br>
-		3.负责公司开发环境的搭建</p>
+		3.负责量化平台技术方案的研究</p>
 	</li>
-	<li>
-		<div class="details">
-			<h3>德永科技有限公司</h3>
-			<h4>广州中大科技园</h4>
-			<h4>Python工程师</h4>
-			<h5>10月2016 - 6月2017</h5>
-		</div>
-		<p>1.负责公司人口预测项目的开发</br>
-		2.负责数据爬虫的开发</br>
-		3.负责OA系统公文比对模块开发</p>
-	</li>
-	
 </ul><!--end jobs-->
 
 
@@ -175,122 +198,107 @@
 <ul id="jobs">
 	<li>
 		<div class="details">
-			<h3>项目名称：雀康茶楼棋牌</h3>
-			<h4>职责范围：游戏后台与游戏规则开发</h4>
-			<h4>相关技术：Python、Bottle、Tornado、WebSocket</h4>
+			<h3>项目名称：货源补贴</h3>
+			<h4>职责范围：负责这更货源补贴服务</h4>
+			<h4>相关技术：Python、Flask、MySQL、Redis、Kafka、APScheduler</h4>
+			<h5>7月 2020 - 9月 2020</h5>
+		</div>
+		<p>项目描述：为了让司机使用APP，我们会根据对于的策略为满足策略的货源进行金额或优惠券的补贴</br>
+		克服困难：设计多端（Web端、App端）操作，在复杂业务下，容易出现数据混乱问题，为了解决这个问题，我们绘制项目开发结构图、构建项目空壳目录等形式规范化开发，对于多端操作使用Redis锁进行统一等等。</p>
+	</li>
+	<li>
+		<div class="details">
+			<h3>项目名称：零担业务</h3>
+			<h4>职责范围：负责零担商家端开发</h4>
+			<h4>相关技术：Python、Flask、MySQL、Redis</h4>
+			<h5>2月 2020 - 6月 2020</h5>
+		</div>
+		<p>项目描述：零担类似于货物的滴滴拼车，业务上要配置不同的运力渠道，相比于单纯的拼车，业务上更为复杂，该项目以公司作为货源调度平台，力求最大化不同运力渠道的利润。</br>
+		克服困难：涉及多端（Web端、App端）操作，在复杂的业务下，容易出现数据混乱问题，为了解决这个问题，我们绘制项目开发结构图、构建项目预开发代码等形式规范化开发，对于多端操作使用Redis锁进行统一等等。</p>
+	</li>
+	<li>
+		<div class="details">
+			<h3>项目名称：古剑奇谭游运维平台</h3>
+			<h4>职责范围：自动化运维平台与简单游戏活动开发</h4>
+			<h4>相关技术：Python、Erlang、Flask</h4>
 			<h5>3月 2018 - 6月 2018</h5>
 		</div>
-		<p>项目描述：棋牌类游戏，有大部分地方棋牌玩法，用户可以自己创建茶楼，开房邀请好友游戏，游戏端通过websocket连接</br>
-		克服困难：进入茶楼过慢，重构了茶楼部分代码，全部使用websocket实现</p>
-
+		<p>项目描述：从零搭建古剑奇谭页游自动化部署平台，实现游戏的前后端自动部署、热更、开服停服、数据库维护等各种功能</br>
+		克服困难：因为此前没有开发大型部署平台的经验，导致操作大量服务器时容易失败，随后调整的项目整体结构，利用Celery改为串行执行的形式。</p>
 	</li>
 	<li>
 		<div class="details">
 			<h3>项目名称：量化商城</h3>
 			<h4>职责范围：商城的后台开发</h4>
-			<h4>相关技术：Python、Django、Django REST Frawework</h4>
-			<h5>9月 2017 - 1月 2018</h5>
+			<h4>相关技术：Python、Django REST</h4>
+			<h5>9月 2017 - 3月 2018</h5>
 		</div>
 		<p>项目描述：售卖量化策略的微信公众号商城，为购买策略的用户提供股票买卖的服务，前后端分离开发</br>
-克服困难：策略买卖数据计算与对接、商城分销逻辑实现</p>
+		克服困难：策略买卖数据计算与对接、商城分销逻辑实现</p>
+	</li>
 
-	</li>
-	<li>
-		<div class="details">
-			<h3>项目名称：人口预测系统</h3>
-			<h4>职责范围：Python算法实现和web开发</h4>
-			<h4>相关技术：Django、R</h4>
-
-			<h5>3月 2017 - 5月 2017</h5>
-		</div>
-		<p>项目描述：使用该地区历史人口数据，对未来5年的人口数据进行预测并计算出医疗投入费用和教育投入费用</br>
-		克服困难：历史数据的缺失，使用已有的部分数据通过生育率和死亡率合理的推测缺失数据
-		</p>
-	</li>
-	
-	<li>
-		<div class="details">
-			<h3>项目名称：微信周边游</h3>
-			<h4>职责范围：实现旅游团和票种</h4>
-			<h4>相关技术：PHP、微擎二次开发</h4>
-			<h5>12月 2016 - 1月 2017</h5>
-		</div>
-		<p>项目描述：在微信公众号上搭建一个旅游平台，让用户可以直接通过微信来订购要旅游票</br>
-		克服困难：克服了票种种类过多造成的随机传值问题，并且自定义了部分组件满足特殊需求
-		</p>
-	</li>
 </ul><!--end jobs-->
-<!--EDUCATION TITLE-->
-<div class="clear"></div><h2 id="learn" class="sectionHead">教育背景</h2>
 
-<!--EDUCATION-->
-<ul id="schools">
-	<li>
-		<div class="details">
-			<h3>中山大学新华学院</h3>
-			<h4>信息科学系软件工程专业</h4>
-			<h5>9月 2014-现在</h5>
-		</div>
-		<p>对计算机、程序有很大的兴趣，在校期间时常独自在图书馆学习编程知识，并喜欢将学会的知识内化整理，通过博客将有价值的内容分享出去，同时对金融、历史方面的知识感兴趣，平时放松时喜欢看与编程无关的书籍</p>
-	</li>
-	
-</ul><!--end schooling-->
 
 <div class="clear"></div>
 
-<!--HONORS / AWARDS TITLE-->
-<h2 id="ribbon" class="sectionHead">荣誉 &amp; 奖项</h2>
-
-<!--HONORS / AWARDS-->
-<ul id="honorsAwards">
-	<li>网络工程师证</li>
-	<li>思科网院杯全国二等奖</li>
-	<li>蓝桥杯广东省二等奖（算法比赛）</li>
-	<li>大学生创新杯华南赛区二等奖</li>
-	<li>大学生数学建模大赛全国优秀奖</li>
-</ul><!--end honorsAwards-->
 
 <!--EXPERIENCE TITLE-->
 <h2 id="clock" class="sectionHead">个人项目</h2>
 
 <!--EXPERIENCE-->
 <ul id="jobs">
+
+
 	<li>
 		<div class="details">
-			<h3>名称：HackPython</h3>
-			<h4>简介：Python教育类网站</h4>
-			<h4>地址：hackpython.com</h4>
-			<h5>2月 2018 - 7月 2018</h5>
+			<h3>名称：TopPL</h3>
+			<h4>简介：自制编程语言</h4>
+			<h4>地址：github.com/ToyPL</h4>
+			<h5>6月 2020 - 8月 2020</h5>
 		</div>
-		<p>描述：HackPython是我个人制作的Python教育类网站，主要分享与Python相关的知识，目前已有多个学习文档供人学习</br>
+		<p>描述：支持变量、if判断、for循环、函数、内建方法、列表
+			递归等基本功能的自制编程语言
+		</p>
+	</li>
+
+	<li>
+		<div class="details">
+			<h3>名称：TopWeb</h3>
+			<h4>简介：自制Web框架</h4>
+			<h4>地址：github.com/ayuliao/ToyWeb</h4>
+			<h5>3月 2020 - 3月 2020</h5>
+		</div>
+		<p>描述：自制的单文件Web框架，足够简单与轻量</br>
+		</p>
+	</li>
+
+	<li>
+		<div class="details">
+			<h3>名称：懒编程</h3>
+			<h4>简介：技术公众号</h4>
+			<h4>地址：微信搜懒编程</h4>
+			<h5>2月 2018 - 12月 2020</h5>
+		</div>
+		<p>描述：分享了自己的编程经验、项目经验、个人思考</br>
+			，目前已写115篇原创文章
 		</p>
 	</li>
 	<li>
 		<div class="details">
-			<h3>名称：ayuliao</h3>
-			<h4>简介：个人博客</h4>
-			<h4>地址：ayuliao.com</h4>
-			<h5>2月 2016 - 7月 2018</h5>
+			<h3>名称：AutoPublish</h3>
+			<h4>简介：多平台文章自动发送工具</h4>
+			<h4>地址：github.com/ayuLiao/AutoPublish</h4>
+			<h5>7月 2019 - 7月 2019</h5>
 		</div>
-		<p>描述：自己的一些编程经验、读书笔记以及个人体会</br>
-			将自己的知识系统化、结构化
-		</p>
-	</li>
-	<li>
-		<div class="details">
-			<h3>名称：自然语言处理课程</h3>
-			<h4>简介：极客学院上录制的课程</h4>
-			<h4>地址：http://t.cn/RdovNbv</h4>
-			<h5>9月 2017 - 10月 2017</h5>
-		</div>
-		<p>描述：比较详细的讲了自然语言处理基础方面的内容，并通过实战来综合使用讲过的内容</br>
+		<p>描述：将一篇文章自动发布到知乎、CSDN、豆瓣等多个平台</br>
 		</p>
 	</li>
 	<li>
 		<div class="details">
 			<h3>名称：wmrs</h3>
 			<h4>简介：商城推荐系统</h4>
-			<h4>地址：http://t.cn/RdoPKer</h4>
+			<h4>地址：t.cn/RdoPKer</h4>
 			<h5>10月 2017 - 11月 2017</h5>
 		</div>
 		<p>描述：使用word2vec等自然语言处理技术，训练推荐模型，获得的推荐系统</br>
@@ -300,7 +308,7 @@
 		<div class="details">
 			<h3>名称：SAS</h3>
 			<h4>简介：最相关文章搜索引擎</h4>
-			<h4>地址：https://github.com/ayuLiao/SAS</h4>
+			<h4>地址：github.com/ayuLiao/SAS</h4>
 			<h5>7月 2017 - 8月 2017</h5>
 		</div>
 		<p>描述：使用TF-IDF和LDA算法来做文章的相关性索引和聚类操作</br>
@@ -311,7 +319,7 @@
 		<div class="details">
 			<h3>名称：红包鸟</h3>
 			<h4>简介：微信抢红包神器</h4>
-			<h4>地址：http://t.cn/RdoPmj0</h4>
+			<h4>地址：t.cn/RdoPmj0</h4>
 			<h5>4月 2017 - 5月 2017</h5>
 		</div>
 		<p>描述：微信抢红包app，除了实现市面上常见的抢红包功能外，还实现了息屏抢红包等特色功能</br>
@@ -319,6 +327,24 @@
 	</li>
 	
 </ul><!--end jobs-->
+
+<div class="clear"></div>
+
+<!--EDUCATION TITLE-->
+<div class="clear"></div><h2 id="learn" class="sectionHead">教育背景</h2>
+
+<!--EDUCATION-->
+<ul id="schools">
+	<li>
+		<div class="details">
+			<h3>中山大学新华学院</h3>
+			<h4>信息科学系软件工程专业</h4>
+			<h5>9月 2014-6月 2018</h5>
+		</div>
+		<p>对计算机、程序有很大的兴趣，在校期间时常独自在图书馆学习编程知识，并喜欢将学会的知识内化整理，通过博客将有价值的内容分享出去，同时对金融、历史方面的知识感兴趣</p>
+	</li>
+	
+</ul><!--end schooling-->
 
 <div class="clear"></div>
 
